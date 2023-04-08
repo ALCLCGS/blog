@@ -19,11 +19,7 @@ const useCount=()=>{
   return [count,secoundCount,handleClick];
 }
 function App() {
-  debugger
-  const [aszx,setCountsx] = useCount12();
   const [count,secoundCount,handleClick] = useCount();
-  debugger
- 
   return (
     <div className="App">
       <header className="App-header">
@@ -31,13 +27,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={handleClick}> {count} - {secoundCount}</button>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button onClick={handleClick}> {count} - {secoundCount}</button>
+       
          
           Learn React
         </a>
