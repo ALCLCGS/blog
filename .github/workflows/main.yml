@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm i
   build:
-    need: initInfo
+    needs: initInfo
     runs-on: ubuntu-latest
     steps:
       - name: Build artifact
