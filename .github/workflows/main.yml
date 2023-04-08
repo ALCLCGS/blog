@@ -24,7 +24,7 @@ jobs:
           node-version: '16'
 
       - name: Debug system info
-        run: ls & node -v
+        run: ls & node -v & echo ${{ steps.deployment.outputs.page_url }}
 
       - name: Install dependencies
         run: npm i
