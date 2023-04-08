@@ -35,7 +35,7 @@ jobs:
       - name: Upload-artifact
         uses: actions/upload-artifact@v2
         with:
-          path: docs
+          path: blog/docs/
         
       - name: Deploy Page To Release
         id: deployment
