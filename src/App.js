@@ -1,14 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react';
-const useCount12=()=>{
- let a=1
- const setCountsx = () => {
-  a=a+1;
-  return a;
- }
-  return [a,setCountsx];
-}
+
 const useCount=()=>{
   const [count,setCount] = useState(0);
   const [secoundCount,setSecoundCount] = useState(0);
@@ -18,6 +11,7 @@ const useCount=()=>{
   }
   return [count,secoundCount,handleClick];
 }
+
 function App() {
   const [count,secoundCount,handleClick] = useCount();
   return (
