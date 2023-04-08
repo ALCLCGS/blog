@@ -1,6 +1,9 @@
 name: github-blog-demo
 run-name: ${{ github.actor }} push and build the blog
-on: push
+on:
+  push:
+    branches:
+    - master
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
