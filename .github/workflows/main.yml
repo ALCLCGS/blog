@@ -6,7 +6,7 @@ on:
     - master
 jobs:
   #1
-  prepare:
+  init-info:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,7 +24,7 @@ jobs:
         run: npm i
   #2
   build:
-    need: prepare
+    need: init-info
     runs-on: ubuntu-latest
     steps:
       - name: Build artifact
